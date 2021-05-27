@@ -1,6 +1,7 @@
 package software.hrms.entities.concretes;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,14 +34,14 @@ public class JobPosition {
 	
 	
 	@Column(name = "created_date")
-	private Date createdDate;
+	private LocalDateTime createdDate = LocalDateTime.now();
 	
 	
 	@Column(name = "updated_date")
-	private Date updatedDate;
+	private LocalDateTime updatedDate;
 	
 	@Column(name = "status")
-	private boolean status;
+	private boolean status = true;
 
 
 }

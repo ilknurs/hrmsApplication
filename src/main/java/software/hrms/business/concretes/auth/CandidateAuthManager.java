@@ -27,9 +27,11 @@ public class CandidateAuthManager implements CandidateAuthService {
 	private EmailSenderService emailSenderService;
 
 	@Autowired
-	public CandidateAuthManager(AuthValidatorService authValidatorService, CandidateService candidateService) {
+	public CandidateAuthManager(AuthValidatorService authValidatorService, CandidateService candidateService,ActivationCodeService activationCodeService,EmailSenderService emailSenderService ) {
 		this.authValidatorService = authValidatorService;
 		this.candidateService = candidateService;
+		this.activationCodeService = activationCodeService;
+		this.emailSenderService = emailSenderService;
 	}
 
 	@Override

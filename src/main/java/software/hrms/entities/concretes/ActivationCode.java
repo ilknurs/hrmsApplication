@@ -1,6 +1,7 @@
 package software.hrms.entities.concretes;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -41,23 +42,23 @@ public class ActivationCode {
 	private String activationCode;
 
 	@Column(name = "expiration_date")
-	private Date expirationDate;
+	private LocalDateTime expirationDate;
 
 	@Column(name = "is_confirmed")
-	private boolean isConfirmed;
+	private boolean isConfirmed = false;
 
 	@Column(name = "activation_date")
-	private Date activationDate;
+	private LocalDateTime activationDate;
 
 	@CreatedDate
 	@Column(name = "created_date")
-	private Date createdDate;
+	private LocalDateTime createdDate =LocalDateTime.now();
 
 	@LastModifiedDate
 	@Column(name = "updated_date")
-	private Date updatedDate;
+	private LocalDateTime updatedDate;
 
 	@Column(name = "status")
-	private boolean status;
+	private boolean status = true;
 
 }

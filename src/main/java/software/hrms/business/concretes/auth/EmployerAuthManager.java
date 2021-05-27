@@ -25,9 +25,11 @@ public class EmployerAuthManager implements EmployerAuthService {
 	private EmailSenderService emailSenderService;
 
 	@Autowired
-	public EmployerAuthManager(EmployerService employerService, AuthValidatorService authValidatorService) {
+	public EmployerAuthManager(EmployerService employerService, AuthValidatorService authValidatorService ,ActivationCodeService activationCodeService,EmailSenderService emailSenderService) {
 		this.authValidatorService = authValidatorService;
 		this.employerService = employerService;
+		this.activationCodeService = activationCodeService;
+		this.emailSenderService = emailSenderService;
 	}
 
 	@Override
@@ -40,7 +42,8 @@ public class EmployerAuthManager implements EmployerAuthService {
 
 		// dto employer'a maplendi.
 		Employer employer = new Employer(registerForEmployerDto.getCompanyName(),
-				registerForEmployerDto.getPhoneNumber(), registerForEmployerDto.getWebAdress());
+				registerForEmployerDto.getPhoneNumber(), registerForEmployerDto.getWebAdress(),
+				registerForEmployerDto.getEmail(), registerForEmployerDto.getPassword());
 
 		Result addResult = employerService.add(employer);
 		if (!addResult.isSuccess()) {

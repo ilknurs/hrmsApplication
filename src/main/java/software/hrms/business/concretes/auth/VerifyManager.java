@@ -32,6 +32,9 @@ public class VerifyManager implements VerifyService {
 			return result;
 		}
 		
+		activation.get().setConfirmed(true);
+		activation.get().setActivationDate(LocalDateTime.now());
+		activationCodeService.update(activation.get());
 		return new SuccessResult(Messages.codeVerified);
 	}
 
@@ -42,7 +45,7 @@ public class VerifyManager implements VerifyService {
 		if (activation.get().isConfirmed()) {
 			return new ErrorResult(Messages.activationExist);
 		}
-		if (activation.get().getExpirationDate().before(Date.valueOf(String.valueOf(LocalDateTime.now())))) {
+		if (activation.get().getExpirationDate().isBefore(LocalDateTime.now())) {
 			return new ErrorResult(Messages.codeExpired);
 		}
 		if (!activation.get().getActivationCode().equals(activationCode)) {

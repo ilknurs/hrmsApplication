@@ -33,7 +33,7 @@ public class ActivationCodeManager implements ActivationCodeService {
 
     @Override
     public Result add(ActivationCode activationCode) {
-        activationCode.setExpirationDate(Date.valueOf(String.valueOf(LocalDateTime.now().plusMinutes(3))));
+        activationCode.setExpirationDate(LocalDateTime.now().plusMinutes(15));
         activationCodeDao.save(activationCode);
         return new SuccessResult(Messages.activationCodeAdded);
     }

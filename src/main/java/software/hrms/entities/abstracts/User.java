@@ -1,6 +1,7 @@
 package software.hrms.entities.abstracts;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,8 +12,8 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
+
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -44,15 +45,15 @@ public abstract class User {
 	@Column(name = "password")
 	private String password;
 	
-	@CreatedDate
-	@Column(name = "created_date")
-	private Date createdDate;
 	
-	@LastModifiedDate
+	@Column(name = "created_date")
+	private LocalDateTime createdDate = LocalDateTime.now();
+	
+	
 	@Column(name = "updated_date")
-	private Date updatedDate;
+	private LocalDateTime updatedDate;
 	
 	@Column(name = "status")
-	private boolean status;
+	private boolean status = true;
 
 }
