@@ -38,7 +38,7 @@ public class EmployerAuthManager implements EmployerAuthService {
 			return result;
 		}
 
-		// dto candidate'e maplendi.
+		// dto employer'a maplendi.
 		Employer employer = new Employer(registerForEmployerDto.getCompanyName(),
 				registerForEmployerDto.getPhoneNumber(), registerForEmployerDto.getWebAdress());
 

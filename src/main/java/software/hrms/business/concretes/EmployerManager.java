@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import software.hrms.business.abstracts.EmployerService;
-import software.hrms.business.validationRules.EmployerValidatorService;
 import software.hrms.dataAcces.abstracts.EmployerDao;
 import software.hrms.dataAcces.abstracts.UserDao;
 import software.hrms.entities.concretes.Employer;
