@@ -23,7 +23,7 @@ public class Messages {
     public static String jobPositionAdded = "Job position has been added.";
     public static String jobPositionListed = "Business departments have been listed.";
 
-    //activationCode
+    //activationCode 
     public static String activationCodeAdded = "The activation code has been added.";
     public static String activationCodeDeleted = "The activation code has been deleted.";
     public static String activationCodeUpdated = "The activation code has been updated.";
