@@ -9,6 +9,7 @@ import software.hrms.core.utilities.results.SuccessResult;
 
 @Component
 public class AuthValidator implements AuthValidatorService {
+	
     public Result isPasswordConfirmed(String password, String confirmPassword){
         if(password.equals(confirmPassword)){
             return new SuccessResult();

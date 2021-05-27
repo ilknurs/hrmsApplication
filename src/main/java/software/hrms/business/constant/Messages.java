@@ -28,13 +28,13 @@ public class Messages {
     public static String activationCodeDeleted = "The activation code has been deleted.";
     public static String activationCodeUpdated = "The activation code has been updated.";
     public static String activationCodeListed = "The activation code has been listed.";
-	public static String codeNotFound;
-	public static String activationCodeExists;
-	public static String codeExpired;
-	public static String codeNotEquals;
-	public static String codeVerified;
-	public static String activationExist;
-	public static String codeNotEqual;
+	public static String codeNotFound = "The activation code not found.";
+	public static String codeExpired = "The activation code is out of date. Please get a new one.";
+	public static String codeNotEqual = " The activation code is invalid.";
+	public static String codeVerified = "The activation code verification is successful.";
+	public static String activationExist = "This email already exists.";
+	
+	
 	
 	
 	
