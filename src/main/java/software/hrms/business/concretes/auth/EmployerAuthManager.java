@@ -58,7 +58,7 @@ public class EmployerAuthManager implements EmployerAuthService {
 
 		}
 
-		emailSenderService.send("Doğrulama için linke tıklayınız .." + code);
+		emailSenderService.send("Click the link for verification ..." + code);
 		return new SuccessResult(Messages.userAdded);
 	}
 

@@ -32,7 +32,13 @@ public class Messages {
 	public static String codeExpired = "The activation code is out of date. Please get a new one.";
 	public static String codeNotEqual = " The activation code is invalid.";
 	public static String codeVerified = "The activation code verification is successful.";
-	public static String activationExist = "This email already exists.";
+	public static String activationExist = "This email has already been verified.";
+	
+	
+	public static String jobPosition;
+	public static String jobAdvertisementListed =" Active job advertisements have listed.";
+	public static String jobAdvertisementListedByLastDate = "Job advertisements have listed by last date.";
+	public static String jobAdvertisementListedByCompany ="All active job advertisements of a company have listed.";
 	
 	
 	

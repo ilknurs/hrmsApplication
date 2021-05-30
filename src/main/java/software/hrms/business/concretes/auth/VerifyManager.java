@@ -1,6 +1,5 @@
 package software.hrms.business.concretes.auth;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
@@ -31,7 +30,7 @@ public class VerifyManager implements VerifyService {
 		if (!result.isSuccess()) {
 			return result;
 		}
-		
+
 		activation.get().setConfirmed(true);
 		activation.get().setActivationDate(LocalDateTime.now());
 		activationCodeService.update(activation.get());

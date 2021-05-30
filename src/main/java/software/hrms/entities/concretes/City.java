@@ -1,7 +1,5 @@
 package software.hrms.entities.concretes;
 
-
-import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -20,32 +18,21 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "job_positions")
-@NoArgsConstructor // Parametresiz constroctor
-@AllArgsConstructor // Parametreli ctor
+@Table(name = "cities")
+@NoArgsConstructor
+@AllArgsConstructor
 @JsonIgnoreProperties({ "hibernateLazyInitializer", "handler", "jobAdvertisements" })
-
-public class JobPosition {
+public class City {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
-	private int id;
+	@Column(name = "city_id")
+	private int cityId;
 
-	@Column(name = "title")
-	private String title;
+	@Column(name = "city_name")
+	private String cityName;
 
-	@Column(name = "created_date")
-	private LocalDateTime createdDate = LocalDateTime.now();
-
-	@Column(name = "updated_date")
-	private LocalDateTime updatedDate;
-
-	@Column(name = "status")
-	private boolean status = true;
-	
-	@OneToMany(mappedBy = "jobPosition")
+	@OneToMany(mappedBy = "city")
 	private List<JobAdvertisement> jobAdvertisement;
-	
 
 }
