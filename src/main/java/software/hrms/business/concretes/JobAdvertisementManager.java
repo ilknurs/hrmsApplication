@@ -17,7 +17,7 @@ import software.hrms.core.utilities.results.SuccessDataResult;
 import software.hrms.core.utilities.results.SuccessResult;
 import software.hrms.dataAcces.abstracts.JobAdvertisementDao;
 import software.hrms.entities.concretes.JobAdvertisement;
-
+ 
 @Service
 public class JobAdvertisementManager implements JobAdvertisementService {
 

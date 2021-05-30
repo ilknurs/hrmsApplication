@@ -13,7 +13,7 @@ import software.hrms.business.abstracts.CityService;
 import software.hrms.core.utilities.results.DataResult;
 import software.hrms.core.utilities.results.Result;
 import software.hrms.entities.concretes.City;
-
+ 
 @RestController
 @RequestMapping("/api/cities")
 public class CitiesController {

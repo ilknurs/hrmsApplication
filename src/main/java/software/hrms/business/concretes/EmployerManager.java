@@ -7,7 +7,7 @@ import software.hrms.business.abstracts.EmployerService;
 import software.hrms.dataAcces.abstracts.EmployerDao;
 import software.hrms.dataAcces.abstracts.UserDao;
 import software.hrms.entities.concretes.Employer;
-
+ 
 @Service
 public class EmployerManager extends UserManager<Employer> implements EmployerService {
 	private EmployerDao employerDao;

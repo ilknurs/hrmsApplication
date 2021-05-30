@@ -15,7 +15,7 @@ import software.hrms.business.abstracts.JobAdvertisementService;
 import software.hrms.core.utilities.results.DataResult;
 import software.hrms.core.utilities.results.Result;
 import software.hrms.entities.concretes.JobAdvertisement;
-
+ 
 @RestController
 @RequestMapping("/api/jobadvertisements")
 public class JobAdvertisementsController {

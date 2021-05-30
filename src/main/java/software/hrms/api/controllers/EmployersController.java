@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import software.hrms.business.abstracts.EmployerService;
 import software.hrms.core.utilities.results.DataResult;
 import software.hrms.entities.concretes.Employer;
-
+ 
 @RestController
 @RequestMapping("/api/employers")
 public class EmployersController {

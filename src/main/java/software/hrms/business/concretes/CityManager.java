@@ -14,7 +14,7 @@ import software.hrms.entities.concretes.City;
 
 @Component
 public class CityManager implements CityService {
-
+ 
 	private CityDao cityDao;
 
 	@Override
