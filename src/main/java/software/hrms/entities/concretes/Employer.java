@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import software.hrms.entities.abstracts.User;
+import software.hrms.core.entities.User;
  
 @EqualsAndHashCode(callSuper = false)
 @Data

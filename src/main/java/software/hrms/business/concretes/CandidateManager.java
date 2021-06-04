@@ -8,12 +8,12 @@ import software.hrms.business.constant.Messages;
 import software.hrms.business.validationRules.CandidateValidatorService;
 import software.hrms.core.adapters.mernis.UserRealCheckService;
 import software.hrms.core.adapters.models.MernisPerson;
+import software.hrms.core.dataAccess.UserDao;
 import software.hrms.core.utilities.business.BusinessEngine;
 import software.hrms.core.utilities.results.ErrorResult;
 import software.hrms.core.utilities.results.Result;
 import software.hrms.core.utilities.results.SuccessResult;
 import software.hrms.dataAcces.abstracts.CandidateDao;
-import software.hrms.dataAcces.abstracts.UserDao;
 import software.hrms.entities.concretes.Candidate;
 
 @Service

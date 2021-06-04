@@ -2,9 +2,10 @@ package software.hrms.business.concretes;
 
 import software.hrms.business.abstracts.UserService;
 import software.hrms.business.constant.Messages;
+import software.hrms.core.dataAccess.UserDao;
+import software.hrms.core.entities.User;
 import software.hrms.core.utilities.results.*;
-import software.hrms.dataAcces.abstracts.UserDao;
-import software.hrms.entities.abstracts.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

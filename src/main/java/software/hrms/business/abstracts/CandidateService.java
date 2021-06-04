@@ -10,6 +10,6 @@ public interface CandidateService extends UserService<Candidate> {
 
 	DataResult<List<Candidate>> getAll();
 
-	Result add(Candidate jobPosition);
+	Result add(Candidate candidate);
 
 }

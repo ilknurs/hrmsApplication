@@ -1,6 +1,5 @@
-package software.hrms.entities.abstracts;
+package software.hrms.core.entities;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;

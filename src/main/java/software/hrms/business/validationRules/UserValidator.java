@@ -1,10 +1,10 @@
 package software.hrms.business.validationRules;
 
 import software.hrms.business.constant.Messages;
+import software.hrms.core.entities.User;
 import software.hrms.core.utilities.results.ErrorResult;
 import software.hrms.core.utilities.results.Result;
 import software.hrms.core.utilities.results.SuccessResult;
-import software.hrms.entities.abstracts.User;
 
 public class UserValidator implements UserValidatorService {
 
